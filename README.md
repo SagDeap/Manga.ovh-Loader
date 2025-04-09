@@ -10,12 +10,12 @@
 ## Установка зависимостей
 
 ```bash
-pip install requests beautifulsoup4 colorama
+pip install -r requirements.txt
 ```
 ## Использование
 
 ```bash
-python manga_simple.py "URL_страницы" -o папка_для_сохранения
+python Loader.py "URL_страницы" -o папка_для_сохранения
 ```
 
 ### Важно!
@@ -32,12 +32,12 @@ https://manga.ovh/content/имя_манги/ID_главы
 
 ✅ **ПРАВИЛЬНО**:
 ```bash
-python manga_simple.py "https://manga.ovh/content/lookism/ac875d64-07b0-4f1c-9e34-f06648719ffd"
+python Loader.py "https://manga.ovh/content/lookism/ac875d64-07b0-4f1c-9e34-f06648719ffd"
 ```
 
 ❌ **НЕПРАВИЛЬНО**:
 ```bash
-python manga_simple.py https://manga.ovh/content/lookism/ac875d64-07b0-4f1c-9e34-f06648719ffd?page=0
+python Loader.py https://manga.ovh/content/lookism/ac875d64-07b0-4f1c-9e34-f06648719ffd?page=0
 ```
 
 
@@ -50,12 +50,12 @@ python manga_simple.py https://manga.ovh/content/lookism/ac875d64-07b0-4f1c-9e34
 
 1. Базовое использование:
 ```bash
-python manga_simple.py "https://manga.ovh/content/lookism/ac875d64-07b0-4f1c-9e34-f06648719ffd"
+python Loader.py "https://manga.ovh/content/lookism/ac875d64-07b0-4f1c-9e34-f06648719ffd"
 ```
 
 2. Указание собственной директории для сохранения:
 ```bash
-python manga_simple.py "https://manga.ovh/content/lookism/ac875d64-07b0-4f1c-9e34-f06648719ffd" -o my_downloads
+python Loader.py "https://manga.ovh/content/lookism/ac875d64-07b0-4f1c-9e34-f06648719ffd" -o my_downloads
 ```
 
 
